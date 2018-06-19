@@ -1,0 +1,53 @@
+	"State"	"State Code"	Deaths	Population
+	"Alabama"	"01"	722	643561
+	"Alaska"	"02"	106	98937
+	"Arizona"	"04"	785	780581
+	"Arkansas"	"05"	452	389822
+	"California"	"06"	3520	5083312
+	"Colorado"	"08"	524	656673
+	"Connecticut"	"09"	270	426653
+	"Delaware"	"10"	84	113854
+	"District of Columbia"	"11"	140	88632
+	"Florida"	"12"	1880	2107254
+	"Georgia"	"13"	1050	1244236
+	"Hawaii"	"15"	89	173305
+	"Idaho"	"16"	180	212224
+	"Illinois"	"17"	1446	1772941
+	"Indiana"	"18"	754	898876
+	"Iowa"	"19"	268	436257
+	"Kansas"	"20"	357	413818
+	"Kentucky"	"21"	553	583738
+	"Louisiana"	"22"	841	707730
+	"Maine"	"23"	118	166970
+	"Maryland"	"24"	686	715606
+	"Massachusetts"	"25"	466	856373
+	"Michigan"	"26"	1068	1410996
+	"Minnesota"	"27"	486	727427
+	"Mississippi"	"28"	512	448688
+	"Missouri"	"29"	791	813726
+	"Montana"	"30"	140	135506
+	"Nebraska"	"31"	213	262480
+	"Nevada"	"32"	263	281470
+	"New Hampshire"	"33"	95	166532
+	"New Jersey"	"34"	690	1042594
+	"New Mexico"	"35"	313	281362
+	"New York"	"36"	1573	2603070
+	"North Carolina"	"37"	1017	1160065
+	"North Dakota"	"38"	65	108386
+	"Ohio"	"39"	1151	1586256
+	"Oklahoma"	"40"	484	533270
+	"Oregon"	"41"	332	493652
+	"Pennsylvania"	"42"	1393	1656251
+	"Rhode Island"	"44"	83	154975
+	"South Carolina"	"45"	610	596248
+	"South Dakota"	"46"	103	118289
+	"Tennessee"	"47"	847	805009
+	"Texas"	"48"	2862	3348917
+	"Utah"	"49"	286	455687
+	"Vermont"	"50"	62	88162
+	"Virginia"	"51"	765	1017922
+	"Washington"	"53"	544	867316
+	"West Virginia"	"54"	320	245621
+	"Wisconsin"	"55"	596	794487
+	"Wyoming"	"56"	91	78418
+"Total"			33046	40854135

@@ -7,14 +7,43 @@
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
     <script src="https://d3js.org/topojson.v2.min.js"></script>
-    <svg width="960" height="600" fill="none" stroke="#000" stroke-linejoin="round" stroke-linecap="round"></svg>
     <style>
-      
+    .counties {
+      fill: none;
+    }
+    .states {
+      fill: none;
+      stroke: #fff;
+      stroke-linejoin: round;
+    }
+    button {
+      padding: 5px 5px;
+    }
     </style>
+    <svg width="960" height="600"></svg>
     <script>
     </script>
   </head>
   <body>
+    <div id="buttons">
+      <button id="button" value="1999">1999</button>
+      <button id="button" value="2000">2000</button>
+      <button id="button" value="2001">2001</button>
+      <button id="button" value="2002">2002</button>
+      <button id="button" value="2003">2003</button>
+      <button id="button" value="2004">2004</button>
+      <button id="button" value="2005">2005</button>
+      <button id="button" value="2006">2006</button>
+      <button id="button" value="2007">2007</button>
+      <button id="button" value="2009">2009</button>
+      <button id="button" value="2010">2010</button>
+      <button id="button" value="2011">2011</button>
+      <button id="button" value="2012">2012</button>
+      <button id="button" value="2013">2013</button>
+      <button id="button" value="2014">2014</button>
+      <button id="button" value="2015">2015</button>
+      <button id="button" value="2016">2016</button>
+    </div>
     <main class='main'></main>
   </body>
 </html>
