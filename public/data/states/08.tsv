@@ -1,56 +1,19 @@
-"Notes"	"State"	"State Code"	Deaths	Population
-	"Alabama"	"01"	47470	4757938
-	"Alaska"	"02"	3618	698895
-	"Arizona"	"04"	45816	6343154
-	"Arkansas"	"05"	28673	2896843
-	"California"	"06"	232736	36961229
-	"Colorado"	"08"	31173	4972195
-	"Connecticut"	"09"	28585	3561807
-	"Delaware"	"10"	7534	891730
-	"District of Columbia"	"11"	4834	592228
-	"Florida"	"12"	169924	18652644
-	"Georgia"	"13"	69712	9620846
-	"Hawaii"	"15"	9914	1346717
-	"Idaho"	"16"	11098	1554439
-	"Illinois"	"17"	100056	12796778
-	"Indiana"	"18"	55973	6459325
-	"Iowa"	"19"	27544	3032870
-	"Kansas"	"20"	24024	2832704
-	"Kentucky"	"21"	41380	4317074
-	"Louisiana"	"22"	40282	4491648
-	"Maine"	"23"	12594	1329590
-	"Maryland"	"24"	43843	5730388
-	"Massachusetts"	"25"	52308	6517613
-	"Michigan"	"26"	86455	9901591
-	"Minnesota"	"27"	37851	5281203
-	"Mississippi"	"28"	28275	2958774
-	"Missouri"	"29"	54263	5961088
-	"Montana"	"30"	8730	983982
-	"Nebraska"	"31"	14810	1812683
-	"Nevada"	"32"	19224	2684665
-	"New Hampshire"	"33"	10100	1316102
-	"New Jersey"	"34"	68277	8755602
-	"New Mexico"	"35"	15643	2036802
-	"New York"	"36"	146475	19307066
-	"North Carolina"	"37"	77117	9449566
-	"North Dakota"	"38"	5914	664968
-	"Ohio"	"39"	107156	11528896
-	"Oklahoma"	"40"	35601	3717572
-	"Oregon"	"41"	31636	3808600
-	"Pennsylvania"	"42"	124780	12666858
-	"Rhode Island"	"44"	9395	1053646
-	"South Carolina"	"45"	40449	4589872
-	"South Dakota"	"46"	6923	807067
-	"Tennessee"	"47"	58288	6306019
-	"Texas"	"48"	163249	24801761
-	"Utah"	"49"	14138	2723421
-	"Vermont"	"50"	5034	624817
-	"Virginia"	"51"	58653	7925937
-	"Washington"	"53"	48270	6667426
-	"West Virginia"	"54"	21386	1847775
-	"Wisconsin"	"55"	45697	5669264
-	"Wyoming"	"56"	4283	559851
-"Total"			2437163	306771529
+"Notes"	"15 Leading Causes of Death"	"15 Leading Causes of Death Code"	Deaths	Population	Crude Rate
+	"#Malignant neoplasms (C00-C97)"	"GR113-019"	121844	87520147	139.2
+	"#Diseases of heart (I00-I09,I11,I13,I20-I51)"	"GR113-054"	114816	87520147	131.2
+	"#Accidents (unintentional injuries) (V01-X59,Y85-Y86)"	"GR113-112"	37988	87520147	43.4
+	"#Chronic lower respiratory diseases (J40-J47)"	"GR113-082"	37793	87520147	43.2
+	"#Cerebrovascular diseases (I60-I69)"	"GR113-070"	30634	87520147	35.0
+	"#Alzheimer's disease (G30)"	"GR113-052"	21078	87520147	24.1
+	"#Intentional self-harm (suicide) (*U03,X60-X84,Y87.0)"	"GR113-124"	15427	87520147	17.6
+	"#Diabetes mellitus (E10-E14)"	"GR113-046"	13446	87520147	15.4
+	"#Influenza and pneumonia (J09-J18)"	"GR113-076"	11663	87520147	13.3
+	"#Chronic liver disease and cirrhosis (K70,K73-K74)"	"GR113-093"	9888	87520147	11.3
+	"#Nephritis, nephrotic syndrome and nephrosis (N00-N07,N17-N19,N25-N27)"	"GR113-097"	7759	87520147	8.9
+	"#Septicemia (A40-A41)"	"GR113-010"	6248	87520147	7.1
+	"#Parkinson's disease (G20-G21)"	"GR113-051"	5598	87520147	6.4
+	"#Atherosclerosis (I70)"	"GR113-071"	5340	87520147	6.1
+	"#Pneumonitis due to solids and liquids (J69)"	"GR113-088"	4729	87520147	5.4
 "---"
 "Dataset: Underlying Cause of Death, 1999-2016"
 "Query Parameters:"
@@ -62,28 +25,40 @@
 "ICD-10 Codes: All"
 "Place of Death: All"
 "Race: All"
-"States: All"
+"States: Colorado (08)"
 "Ten-Year Age Groups: All"
 "Weekday: All"
-"Year/Month: 2009"
-"Group By: State"
-"Show Totals: True"
-"Show Zero Values: False"
-"Show Suppressed: False"
+"Year/Month: All"
+"Group By: 15 Leading Causes of Death"
+"Show Totals: Disabled"
+"Show Zero Values: Disabled"
+"Show Suppressed: Disabled"
 "Calculate Rates Per: 100,000"
 "Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
 "---"
 "Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
 "---"
-"Query Date: Jun 19, 2018 4:10:22 PM"
+"Query Date: Jun 20, 2018 12:36:00 PM"
 "---"
 "Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
 "1999-2016 on CDC WONDER Online Database, released December, 2017. Data are from the Multiple Cause of Death Files, 1999-2016, as"
 "compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
-"at http://wonder.cdc.gov/ucd-icd10.html on Jun 19, 2018 4:10:22 PM"
+"at http://wonder.cdc.gov/ucd-icd10.html on Jun 20, 2018 12:36:00 PM"
+"---"
+Messages:
+"1. When you group results by 15 Leading Causes, results are initially ordered by Death counts; also, total rows, zero rows,"
+"suppressed rows, and Percent of Total are not available. Click any green up/down arrow to change the order. #Top15#"
+"---"
+Footnotes:
+"1. A '#' symbol preceding the label indicates a rankable cause of death. More information."
 "---"
 Caveats:
-"1. The population figures for year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016"
+"1. When you group results by 15 Leading Causes, results show the top 15 rankable causes for the query criteria. Rankable causes"
+"are a subset of the ICD 113 and ICD 130 (Infants) Cause Lists. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Top15."
+"2. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"3. The population figures for year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016"
 "postcensal series released by NCHS on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July"
 "1 resident population, from the Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for"
 "year 2014 are bridged-race estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS"
@@ -97,5 +72,5 @@ Caveats:
 "1999 are from the 1990-1999 intercensal series of July 1 estimates. Population figures for the infant age groups are the number"
 "of live births. <br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published"
 "reports, due to use of the population estimates which were available at the time of release."
-"2. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"4. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
 "resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

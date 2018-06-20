@@ -16,16 +16,42 @@
       stroke: #fff;
       stroke-linejoin: round;
     }
-    button {
-      padding: 5px 5px;
+    .selected {
+      fill: yellow;
     }
+    .state:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      width: 10px;
+      height: 10px;
+      border-bottom: 5px solid #dfdfdf;
+      border-right: 5px solid #dfdfdf;
+      background: #f8f8f8;
+      left: 50%;
+      margin-left: -5px;
+      -moz-transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transform:rotate(45deg);
+    }
+    .test {
+      width: 100px;
+      height: 100px;
+      background-color: brown;
+    }
+    /* #test {
+      fill: brown;
+    } */
     </style>
     <svg width="960" height="600"></svg>
     <script>
     </script>
   </head>
   <body>
-    <div id="buttons">
+    <h1> Crude Mortality Rates in the United States 1999 - 2016 </h1>
+      <p> Information taken from <a href="https://wonder.cdc.gov/"> Centers for Disease Control and Protection </a> <p>
+
+    <!-- <div id="buttons">
       <button id="button" value="1999">1999</button>
       <button id="button" value="2000">2000</button>
       <button id="button" value="2001">2001</button>
@@ -35,6 +61,7 @@
       <button id="button" value="2005">2005</button>
       <button id="button" value="2006">2006</button>
       <button id="button" value="2007">2007</button>
+      <button id="button" value="2008">2008</button>
       <button id="button" value="2009">2009</button>
       <button id="button" value="2010">2010</button>
       <button id="button" value="2011">2011</button>
@@ -43,7 +70,7 @@
       <button id="button" value="2014">2014</button>
       <button id="button" value="2015">2015</button>
       <button id="button" value="2016">2016</button>
-    </div>
+    </div> -->
     <main class='main'></main>
   </body>
 </html>

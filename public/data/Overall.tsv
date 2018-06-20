@@ -1,0 +1,105 @@
+"Notes"	"State"	"State Code"	Deaths	Population	CrudeRate	Crude Rate Lower 95% Confidence Interval	Crude Rate Upper 95% Confidence Interval
+	"Alabama"	"01"	860829	84016831	1024.6	1022.4	1026.8
+	"Alaska"	"02"	63378	12360948	512.7	508.7	516.7
+	"Arizona"	"04"	838107	109191391	767.6	765.9	769.2
+	"Arkansas"	"05"	522965	51115387	1023.1	1020.3	1025.9
+	"California"	"06"	4307063	657732064	654.8	654.2	655.5
+	"Colorado"	"08"	561298	87520147	641.3	639.7	643.0
+	"Connecticut"	"09"	531326	63428300	837.7	835.4	839.9
+	"Delaware"	"10"	135995	15642558	869.4	864.8	874.0
+	"District of Columbia"	"11"	94156	10821657	870.1	864.5	875.6
+	"Florida"	"12"	3131123	328270645	953.8	952.8	954.9
+	"Georgia"	"13"	1259058	167104718	753.5	752.1	754.8
+	"Hawaii"	"15"	172293	23820385	723.3	719.9	726.7
+	"Idaho"	"16"	200170	26808882	746.7	743.4	749.9
+	"Illinois"	"17"	1872193	228431026	819.6	818.4	820.8
+	"Indiana"	"18"	1031686	114672389	899.7	897.9	901.4
+	"Iowa"	"19"	507272	54240721	935.2	932.6	937.8
+	"Kansas"	"20"	448872	50399794	890.6	888.0	893.2
+	"Kentucky"	"21"	752655	76506661	983.8	981.6	986.0
+	"Louisiana"	"22"	755957	81497954	927.6	925.5	929.7
+	"Maine"	"23"	231842	23678068	979.1	975.2	983.1
+	"Maryland"	"24"	800522	102112259	784.0	782.2	785.7
+	"Massachusetts"	"25"	987076	117373383	841.0	839.3	842.6
+	"Michigan"	"26"	1599954	179175401	893.0	891.6	894.3
+	"Minnesota"	"27"	702295	93869577	748.2	746.4	749.9
+	"Mississippi"	"28"	526156	52684994	998.7	996.0	1001.4
+	"Missouri"	"29"	1008325	105641925	954.5	952.6	956.3
+	"Montana"	"30"	158480	17392834	911.2	906.7	915.7
+	"Nebraska"	"31"	277996	32356691	859.2	856.0	862.4
+	"Nevada"	"32"	345282	45337347	761.6	759.0	764.1
+	"New Hampshire"	"33"	188000	23374853	804.3	800.6	807.9
+	"New Jersey"	"34"	1291576	156731084	824.1	822.7	825.5
+	"New Mexico"	"35"	281613	35591378	791.2	788.3	794.2
+	"New York"	"36"	2741578	347668398	788.6	787.6	789.5
+	"North Carolina"	"37"	1399013	163935950	853.4	852.0	854.8
+	"North Dakota"	"38"	107377	12151986	883.6	878.3	888.9
+	"Ohio"	"39"	1987309	206878661	960.6	959.3	962.0
+	"Oklahoma"	"40"	656541	65958887	995.4	993.0	997.8
+	"Oregon"	"41"	575963	67122422	858.1	855.9	860.3
+	"Pennsylvania"	"42"	2313883	226120660	1023.3	1022.0	1024.6
+	"Rhode Island"	"44"	176337	19028324	926.7	922.4	931.0
+	"South Carolina"	"45"	732630	80204580	913.5	911.4	915.5
+	"South Dakota"	"46"	128691	14407304	893.2	888.4	898.1
+	"Tennessee"	"47"	1066772	110944821	961.5	959.7	963.4
+	"Texas"	"48"	2969227	433541733	684.9	684.1	685.7
+	"Utah"	"49"	260510	47101624	553.1	551.0	555.2
+	"Vermont"	"50"	95443	11177520	853.9	848.5	859.3
+	"Virginia"	"51"	1071197	139832729	766.1	764.6	767.5
+	"Washington"	"53"	865688	117319695	737.9	736.3	739.4
+	"West Virginia"	"54"	386296	32969943	1171.7	1168.0	1175.4
+	"Wisconsin"	"55"	857632	100761896	851.1	849.3	852.9
+	"Wyoming"	"56"	77466	9717004	797.2	791.6	802.8
+"Total"			44915066	5435746389	826.3	826.0	826.5
+"---"
+"Dataset: Underlying Cause of Death, 1999-2016"
+"Query Parameters:"
+"Title:"
+"2013 Urbanization: All"
+"Autopsy: All"
+"Gender: All"
+"Hispanic Origin: All"
+"ICD-10 Codes: All"
+"Place of Death: All"
+"Race: All"
+"States: All"
+"Ten-Year Age Groups: All"
+"Weekday: All"
+"Year/Month: All"
+"Group By: State"
+"Show Totals: True"
+"Show Zero Values: False"
+"Show Suppressed: False"
+"Calculate Rates Per: 100,000"
+"Rate Options: Default intercensal populations for years 2001-2009 (except Infant Age Groups)"
+"---"
+"Help: See http://wonder.cdc.gov/wonder/help/ucd.html for more information."
+"---"
+"Query Date: Jun 20, 2018 12:06:52 PM"
+"---"
+"Suggested Citation: Centers for Disease Control and Prevention, National Center for Health Statistics. Underlying Cause of Death"
+"1999-2016 on CDC WONDER Online Database, released December, 2017. Data are from the Multiple Cause of Death Files, 1999-2016, as"
+"compiled from data provided by the 57 vital statistics jurisdictions through the Vital Statistics Cooperative Program. Accessed"
+"at http://wonder.cdc.gov/ucd-icd10.html on Jun 20, 2018 12:06:52 PM"
+"---"
+Caveats:
+"1. As of April 3, 2017, the underlying cause of death has been revised for 125 deaths in 2014. More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#2014-Revision."
+"2. The method used to calculate 95% confidence intervals is documented here: More information:"
+"http://wonder.cdc.gov/wonder/help/ucd.html#Confidence-Intervals."
+"3. The population figures for year 2016 are bridged-race estimates of the July 1 resident population, from the Vintage 2016"
+"postcensal series released by NCHS on June 26, 2017. The population figures for year 2015 are bridged-race estimates of the July"
+"1 resident population, from the Vintage 2015 postcensal series released by NCHS on June 28, 2016. The population figures for"
+"year 2014 are bridged-race estimates of the July 1 resident population, from the Vintage 2014 postcensal series released by NCHS"
+"on June 30, 2015. The population figures for year 2013 are bridged-race estimates of the July 1 resident population, from the"
+"Vintage 2013 postcensal series released by NCHS on June 26, 2014. The population figures for year 2012 are bridged-race"
+"estimates of the July 1 resident population, from the Vintage 2012 postcensal series released by NCHS on June 13, 2013. The"
+"population figures for year 2011 are bridged-race estimates of the July 1 resident population, from the Vintage 2011 postcensal"
+"series released by NCHS on July 18, 2012. Population figures for 2010 are April 1 Census counts. The population figures for"
+"years 2001 - 2009 are bridged-race estimates of the July 1 resident population, from the revised intercensal county-level 2000 -"
+"2009 series released by NCHS on October 26, 2012. Population figures for 2000 are April 1 Census counts. Population figures for"
+"1999 are from the 1990-1999 intercensal series of July 1 estimates. Population figures for the infant age groups are the number"
+"of live births. <br/><b>Note:</b> Rates and population figures for years 2001 - 2009 differ slightly from previously published"
+"reports, due to use of the population estimates which were available at the time of release."
+"4. The population figures used in the calculation of death rates for the age group 'under 1 year' are the estimates of the"
+"resident population that is under one year of age. More information: http://wonder.cdc.gov/wonder/help/ucd.html#Age Group."

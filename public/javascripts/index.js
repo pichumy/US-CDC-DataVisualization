@@ -2,14 +2,20 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
-let Year = 1999; // default
-
-let clickers = document.querySelectorAll("button");
-clickers.forEach(clicker => {
-  clicker.addEventListener("click", (e) => {
-    Year = e.target.value;
-  })
-})
+// let Year = 1999; // default
+//
+// let clickers = document.querySelectorAll("button");
+// clickers.forEach(clicker => {
+//   clicker.addEventListener("click", (e) => {
+//     Year = e.target.value;
+//     d3.queue()
+//       .defer(d3.json, "https://d3js.org/us-10m.v1.json")
+//       .defer(d3.tsv, `../data/StateDeath${Year}.tsv`, function(d){
+//         mortality.set(d["State Code"], d.Deaths/1000);
+//       })
+//       .await(ready);
+//   })
+// })
 let svg = d3.select("svg");
 
 let height = +svg.attr("height");
@@ -22,7 +28,7 @@ let x = d3.scaleLinear()
   .domain([1, 10])
   .rangeRound([600, 860]);
 let color = d3.scaleThreshold()
-  .domain(d3.range(0, 1.5))
+  .domain(d3.range(2, 10))
   .range(d3.schemeBlues[9]);
 let g = svg.append("g")
   .attr("class", "key")
@@ -48,39 +54,65 @@ g.append("text")
   .attr("fill", "#000")
   .attr("text-anchor", "start")
   .attr("font-weight", "bold")
-  .text("Mortality Rate");
+  .text("Crude Rate");
 
 g.call(d3.axisBottom(x)
       .tickSize(13)
-      .tickFormat(function(x, i) { return i ? x/10 : x/10 + "%"; })
+      .tickFormat(function(x, i) { return i ? x : x + "00"; })
       .tickValues(color.domain()))
     .select("domain")
       .remove();
 d3.queue()
   .defer(d3.json, "https://d3js.org/us-10m.v1.json")
-  .defer(d3.tsv, `../data/StateDeath${Year}.tsv`, function(d){
-    console.log(d);
-    mortality.set(d["State Code"], d.Deaths/1000);
+  .defer(d3.tsv, `../data/Overall.tsv`, function(d){
+    mortality.set(d["State Code"], d.CrudeRate);
   })
   .await(ready);
+// let styles = {
+//   div: {
+//
+//   }
+// }
+let ul = document.createElement("ul");
+ul.className = "test"
+document.body.appendChild(div);
+// This lets us only have to create the event listener once
+let moveHandler = () => {};
+let callback = (e) => {
+  moveHandler(e);
+}
+document.addEventListener("mousemove", callback);
 
 function ready(error, us) {
   if (error) throw error;
-  console.log("this runs");
+
   svg.append("g")
     .selectAll("path")
     .data(topojson.feature(us, us.objects.states).features)
     .enter().append("path")
+      .attr("class", "state")
       .attr("fill", function(d) {
         d.rate = mortality.get(d.id)
-        console.log(d.rate);
-        return color(d.rate * 1000);
+        return color(d.rate/100);
       })
       .attr("d", path)
-    .append("title")
-      .text(function(d) { return d.rate + "%"; });
+    .on('mouseover', function(d){
+      d3.select(this).classed("selected", true);
+      div.innerHTML = "test";
+      console.log(d);
+      d3.tsv(`../data/states/${d.id}.tsv`, function(d){
 
-      // this part makes lines thicker? :thinking:
+      })
+      moveHandler = (e) => {
+        div.style.position = "fixed";
+        div.style.top = e.clientY + 5 + "px";
+        div.style.left = e.clientX + 5 + "px";
+      }
+    })
+    .on('mouseout', function(d){
+      d3.select(this).classed("selected", false)
+    })
+      // Actual lines of the state, rather than just filled colors
   svg.append("path")
     .datum(topojson.mesh(us, us.objects.states, function(a,b) { return a !== b; }))
     .attr("class", "states")
