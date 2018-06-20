@@ -68,14 +68,8 @@ d3.queue()
     mortality.set(d["State Code"], d.CrudeRate);
   })
   .await(ready);
-// let styles = {
-//   div: {
-//
-//   }
-// }
-let ul = document.createElement("ul");
-ul.className = "test"
-document.body.appendChild(div);
+
+let ul = document.getElementById("state-info");
 // This lets us only have to create the event listener once
 let moveHandler = () => {};
 let callback = (e) => {
@@ -90,27 +84,49 @@ function ready(error, us) {
     .selectAll("path")
     .data(topojson.feature(us, us.objects.states).features)
     .enter().append("path")
+      // These individual paths are the states.
       .attr("class", "state")
+      // This function colors the state based on the Crude Rate
       .attr("fill", function(d) {
         d.rate = mortality.get(d.id)
         return color(d.rate/100);
       })
+      // Draw the state!
       .attr("d", path)
+      // On hover, highlight the state, and display information about that state
     .on('mouseover', function(d){
       d3.select(this).classed("selected", true);
-      div.innerHTML = "test";
-      console.log(d);
+      ul.classList.remove("hidden");
+      let strong = document.createElement("strong");
+      strong.innerHTML = "15 Leading Causes of Death";
+      ul.appendChild(strong);
       d3.tsv(`../data/states/${d.id}.tsv`, function(d){
-
+        for(let i = 0; i < 15; i++){
+          let li = document.createElement("li");
+          li.innerHTML = `${d[i]['15 Leading Causes of Death'].substring(1)}: ${d[i].Deaths}`;
+          ul.appendChild(li);
+        }
       })
       moveHandler = (e) => {
-        div.style.position = "fixed";
-        div.style.top = e.clientY + 5 + "px";
-        div.style.left = e.clientX + 5 + "px";
+        ul.style.position = "fixed";
+        if(e.clientY > 300){
+          ul.style.top = e.clientY - 300 + "px";
+        }else{
+          ul.style.top = e.clientY - 5 + "px";
+        }
+        if(e.clientX > 700){
+          ul.style.left = e.clientX - 350 + "px";
+        }else {
+          ul.style.left = e.clientX + 5 + "px";
+        }
       }
     })
     .on('mouseout', function(d){
       d3.select(this).classed("selected", false)
+      ul.classList.add("hidden");
+      while(ul.lastChild){
+        ul.removeChild(ul.lastChild);
+      }
     })
       // Actual lines of the state, rather than just filled colors
   svg.append("path")

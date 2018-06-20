@@ -19,38 +19,41 @@
     .selected {
       fill: yellow;
     }
-    .state:after {
-      content: '';
-      position: absolute;
-      bottom: -10px;
-      width: 10px;
-      height: 10px;
-      border-bottom: 5px solid #dfdfdf;
-      border-right: 5px solid #dfdfdf;
-      background: #f8f8f8;
-      left: 50%;
-      margin-left: -5px;
-      -moz-transform: rotate(45deg);
-      -webkit-transform: rotate(45deg);
-      transform:rotate(45deg);
-    }
     .test {
       width: 100px;
       height: 100px;
       background-color: brown;
     }
-    /* #test {
-      fill: brown;
-    } */
+    .hidden {
+      display: none;
+      position: absolute;
+    }
+    #state-info {
+      padding: 5px;
+      border-radius: 5px;
+      font-size: 14px;
+      border: 1px solid black;
+      z-index: 1;
+      background: #fff;
+    }
+    li {
+      list-style: none;
+    }
     </style>
     <svg width="960" height="600"></svg>
     <script>
     </script>
   </head>
   <body>
+    <ul class="hidden" id="state-info">
+    </ul>
     <h1> Crude Mortality Rates in the United States 1999 - 2016 </h1>
       <p> Information taken from <a href="https://wonder.cdc.gov/"> Centers for Disease Control and Protection </a> <p>
-
+      <p> The Crude Rate is the total number of deaths to residents in a specified geographic area
+(country, state, county, etc.) divided by the total population for the same geographic area (for a
+specified time period, usually a calendar year) and multiplied by 100,000. </p>
+      <p> Darker areas correspond to areas where a larger percentage of deaths occur in comparison to how many people live in the area </p> 
+    <!--  This part of the code is back from when I was planning on having year toggles, but the data didn't look very interesting.-->
     <!-- <div id="buttons">
       <button id="button" value="1999">1999</button>
       <button id="button" value="2000">2000</button>
