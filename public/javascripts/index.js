@@ -1,5 +1,3 @@
-// const axios = require('axios');
-
 document.addEventListener('DOMContentLoaded', () => {
 
 // let Year = 1999; // default
@@ -17,13 +15,9 @@ document.addEventListener('DOMContentLoaded', () => {
 //   })
 // })
 let svg = d3.select("svg");
-
-let height = +svg.attr("height");
-let width = +svg.attr("width");
 let mortality = d3.map();
 let path = d3.geoPath();
   // .projection(projection);
-
 let x = d3.scaleLinear()
   .domain([1, 10])
   .rangeRound([600, 860]);
@@ -79,7 +73,7 @@ document.addEventListener("mousemove", callback);
 
 function ready(error, us) {
   if (error) throw error;
-
+  console.log(us);
   svg.append("g")
     .selectAll("path")
     .data(topojson.feature(us, us.objects.states).features)
@@ -115,9 +109,9 @@ function ready(error, us) {
           ul.style.top = e.clientY - 5 + "px";
         }
         if(e.clientX > 700){
-          ul.style.left = e.clientX - 350 + "px";
+          ul.style.left = e.clientX - 500 + "px";
         }else {
-          ul.style.left = e.clientX + 5 + "px";
+          ul.style.left = e.clientX + 10 + "px";
         }
       }
     })
