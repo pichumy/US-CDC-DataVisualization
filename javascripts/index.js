@@ -58,7 +58,7 @@ g.call(d3.axisBottom(x)
       .remove();
 d3.queue()
   .defer(d3.json, "https://d3js.org/us-10m.v1.json")
-  .defer(d3.tsv, `../data/Overall.tsv`, function(d){
+  .defer(d3.tsv, `https://nofile.io/f/dHjyroKvM9N/Overall.tsv`, function(d){
     mortality.set(d["State Code"], d.CrudeRate);
   })
   .await(ready);
