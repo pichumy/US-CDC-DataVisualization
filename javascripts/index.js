@@ -94,7 +94,8 @@ function ready(error, us) {
       let strong = document.createElement("strong");
       strong.innerHTML = "15 Leading Causes of Death";
       ul.appendChild(strong);
-      d3.tsv(`https://github.com/pichumy/US-CDC-DataVisualization/blob/master/data/states/${d.id}.tsv`, function(d){
+
+      d3.tsv(`https://raw.githubusercontent.com/pichumy/US-CDC-DataVisualization/master/data/states/${d.id}.tsv`, function(d){
         for(let i = 0; i < 15; i++){
           let li = document.createElement("li");
           li.innerHTML = `${d[i]['15 Leading Causes of Death'].substring(1)}: ${d[i].Deaths}`;
