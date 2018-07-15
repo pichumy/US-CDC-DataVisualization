@@ -110,7 +110,7 @@ function ready(error, us) {
           ul.style.top = e.clientY - 5 + "px";
         }
         if(e.clientX > 700){
-          ul.style.left = e.clientX - 600 + "px";
+          ul.style.left = e.clientX - 550 + "px";
         }else {
           ul.style.left = e.clientX + 10 + "px";
         }
