@@ -2,6 +2,8 @@
 
 This project is a heat-map visualization on CDC mortality data during the years from 1999 to 2016. Hovering over a state will provide more detailed information about the causes of death in that state.
 
+https://pichumy.github.io/US-CDC-DataVisualization/
+
 # Architecture and Technologies
 
 This project uses the following technologies:
