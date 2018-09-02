@@ -99,6 +99,7 @@ function ready(error, us) {
         for(let i = 0; i < 15; i++){
           let li = document.createElement("li");
           li.innerHTML = `${d[i]['15 Leading Causes of Death'].substring(1)}: ${d[i].Deaths}`;
+          li.setAttribute('pointer-events', 'none');
           ul.appendChild(li);
         }
       })
@@ -128,7 +129,5 @@ function ready(error, us) {
     .datum(topojson.mesh(us, us.objects.states, function(a,b) { return a !== b; }))
     .attr("class", "states")
     .attr("d", path);
-
-
   }
 })
